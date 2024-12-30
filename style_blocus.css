@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.game-container {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.board-section {
+    flex: 1;
+}
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(20, 25px); /* Taille fixe au lieu de 1fr */
+    gap: 0;
+    background-color: white;
+    padding: 0;
+    border: 1px solid #333;
+    width: fit-content; /* S'ajuste au contenu */
+}
+
+.grid-cell {
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border: 1px solid #ccc; /* Plus léger que #ddd */
+    cursor: pointer;
+}
+
+/* Controls Section */
+.controls-section {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.preview-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1px;
+    background-color: #ccc;
+    padding: 1px;
+    width: 150px;
+    height: 150px;
+    margin: 10px 0;
+}
+
+.piece-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    padding: 8px 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.pieces-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+/* Pièces colorées */
+.piece-blue {
+    background-color: #2196F3;
+}
+
+.piece-red {
+    background-color: #F44336;
+}
+
+.piece-green {
+    background-color: #4CAF50;
+}
+
+.piece-yellow {
+    background-color: #FFC107;
+}
+
+/* Titres */
+h2, h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .game-container {
+        flex-direction: column;
+    }
+    
+    .controls-section {
+        width: 100%;
+    }
+}
+
+Untitled
+
+.preview-valid {
+    background-color: rgba(0, 255, 0, 0.3) !important;
+    border: 2px solid #4CAF50 !important;
+}
+
+.preview-invalid {
+    background-color: rgba(255, 0, 0, 0.3) !important;
+    border: 2px solid #F44336 !important;
+}

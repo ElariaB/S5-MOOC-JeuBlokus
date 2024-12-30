@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blokus Game</title>
+    <link rel="stylesheet" href="style_blocus.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="board-section">
+            <h2>Plateau de jeu</h2>
+            <div id="main-grid" class="game-grid"></div>
+        </div>
+
+        <div class="controls-section">
+            <div class="player-info">
+                <h3>Joueur actuel: <span id="current-player"></span></h3>
+            </div>
+
+            <div class="piece-preview">
+                <h3>Pièce sélectionnée</h3>
+                <div id="piece-grid" class="preview-grid"></div>
+            </div>
+
+            <div class="piece-controls">
+                <h3>Contrôles</h3>
+                <button id="rotate-left">↺ Rotation Gauche</button>
+                <button id="rotate-right">↻ Rotation Droite</button>
+                <button id="flip-vertical">↕ Retourner Vertical</button>
+                <button id="flip-horizontal">↔ Retourner Horizontal</button>
+            </div>
+
+            <div class="pieces-selection">
+                <h3>Pièces disponibles</h3>
+                <div id="pieces-selector" class="pieces-list"></div>
+            </div>
+        </div>
+    </div>
+    <script src="game_blocus.js"></script>
+</body>
+</html>
