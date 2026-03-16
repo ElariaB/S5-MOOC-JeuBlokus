@@ -6,7 +6,7 @@ body {
   min-height: 100vh;
   overflow-y: auto;
   position: relative;
-  padding: 16px;
+  padding: 20px;
 }
 
 /* ── GLOWS ── */
@@ -20,11 +20,18 @@ body {
 .page-wrapper {
   position: relative;
   z-index: 1;
-  max-width: 1200px;
+  width: fit-content;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+/* ── GAME CONTAINER ── */
+.game-container {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
 }
 
 /* ── HEADER ── */
@@ -110,7 +117,7 @@ body {
 
 .game-grid {
   display: grid;
-  grid-template-columns: repeat(20, 30px);
+  grid-template-columns: repeat(20, 26px);
   gap: 0;
   background: #1a1a2e;
   border: 2px solid rgba(255,255,255,0.08);
@@ -121,8 +128,8 @@ body {
 }
 
 .grid-cell {
-  width: 30px;
-  height: 30px;
+  width: 26px;
+  height: 26px;
   background: #12122a;
   border: 1px solid rgba(255,255,255,0.05);
   cursor: pointer;
@@ -145,7 +152,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  width: 260px;
+  width: 240px;
   flex-shrink: 0;
 }
 
@@ -153,7 +160,7 @@ body {
   background: rgba(255,255,255,0.04);
   border: 1px solid rgba(255,255,255,0.08);
   border-radius: 16px;
-  padding: 16px;
+  padding: 14px;
 }
 
 .panel-title {
@@ -169,14 +176,17 @@ body {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 2px;
-  width: 150px;
-  height: 150px;
+  width: 130px;
+  height: 130px;
   background: #12122a;
   border: 1px solid rgba(255,255,255,0.08);
   border-radius: 8px;
   padding: 4px;
   margin-bottom: 12px;
 }
+
+/* ── PIECES LIST ── */
+.pieces-panel { max-height: 520px; overflow-y: auto; }
 
 .preview-grid .grid-cell {
   width: 100%;
