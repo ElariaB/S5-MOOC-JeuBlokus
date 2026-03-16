@@ -1,42 +1,74 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blokus Game</title>
-    <link rel="stylesheet" href="style_blocus.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blokus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style_blocus.css">
 </head>
 <body>
-    <div class="game-container">
-        <div class="board-section">
-            <h2>Plateau de jeu</h2>
-            <div id="main-grid" class="game-grid"></div>
-        </div>
 
-        <div class="controls-section">
-            <div class="player-info">
-                <h3>Joueur actuel: <span id="current-player"></span></h3>
-            </div>
+<div class="bg-glow bg-glow-1"></div>
+<div class="bg-glow bg-glow-2"></div>
+<div class="bg-glow bg-glow-3"></div>
+<div class="bg-glow bg-glow-4"></div>
 
-            <div class="piece-preview">
-                <h3>Pièce sélectionnée</h3>
-                <div id="piece-grid" class="preview-grid"></div>
-            </div>
+<div class="page-wrapper">
 
-            <div class="piece-controls">
-                <h3>Contrôles</h3>
-                <button id="rotate-left">↺ Rotation Gauche</button>
-                <button id="rotate-right">↻ Rotation Droite</button>
-                <button id="flip-vertical">↕ Retourner Vertical</button>
-                <button id="flip-horizontal">↔ Retourner Horizontal</button>
-            </div>
-
-            <div class="pieces-selection">
-                <h3>Pièces disponibles</h3>
-                <div id="pieces-selector" class="pieces-list"></div>
-            </div>
-        </div>
+  <header class="header">
+    <div class="title-block">
+      <h1>Blokus</h1>
+      <p class="subtitle">Place tes pièces par les coins !</p>
     </div>
-    <script src="game_blocus.js"></script>
+    <div class="player-badges">
+      <span class="badge badge-blue"   id="badge-0">🔵 Bleu</span>
+      <span class="badge badge-red"    id="badge-1">🔴 Rouge</span>
+      <span class="badge badge-green"  id="badge-2">🟢 Vert</span>
+      <span class="badge badge-yellow" id="badge-3">🟡 Jaune</span>
+    </div>
+  </header>
+
+  <div class="game-container">
+
+    <!-- BOARD -->
+    <div class="board-section">
+      <div class="board-label">
+        <span class="current-turn-label">Tour de :</span>
+        <span id="current-player" class="current-turn-value"></span>
+      </div>
+      <div id="main-grid" class="game-grid"></div>
+    </div>
+
+    <!-- CONTROLS -->
+    <div class="controls-section">
+
+      <div class="panel">
+        <p class="panel-title">Pièce sélectionnée</p>
+        <div id="piece-grid" class="preview-grid"></div>
+        <div class="piece-controls">
+          <button id="rotate-left">↺</button>
+          <button id="rotate-right">↻</button>
+          <button id="flip-vertical">↕</button>
+          <button id="flip-horizontal">↔</button>
+        </div>
+        <div class="btn-labels">
+          <span>G</span><span>D</span><span>V</span><span>H</span>
+        </div>
+      </div>
+
+      <div class="panel pieces-panel">
+        <p class="panel-title">Pièces disponibles</p>
+        <div id="pieces-selector" class="pieces-list"></div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<script src="game_blocus.js"></script>
 </body>
 </html>
