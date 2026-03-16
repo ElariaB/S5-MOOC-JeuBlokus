@@ -44,7 +44,7 @@ body {
 }
 
 .title-block h1 {
-  font-size: 3.2rem;
+  font-size: 2.4rem;
   font-weight: 900;
   background: linear-gradient(135deg, #fff 30%, #888);
   -webkit-background-clip: text;
@@ -117,7 +117,7 @@ body {
 
 .game-grid {
   display: grid;
-  grid-template-columns: repeat(20, 26px);
+  grid-template-columns: repeat(20, 21px);
   gap: 0;
   background: #1a1a2e;
   border: 2px solid rgba(255,255,255,0.08);
@@ -128,8 +128,8 @@ body {
 }
 
 .grid-cell {
-  width: 26px;
-  height: 26px;
+  width: 21px;
+  height: 21px;
   background: #12122a;
   border: 1px solid rgba(255,255,255,0.05);
   cursor: pointer;
@@ -151,42 +151,42 @@ body {
 .controls-section {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  width: 240px;
+  gap: 10px;
+  width: 200px;
   flex-shrink: 0;
 }
 
 .panel {
   background: rgba(255,255,255,0.04);
   border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 16px;
-  padding: 14px;
+  border-radius: 14px;
+  padding: 12px;
 }
 
 .panel-title {
-  font-size: 0.72rem;
+  font-size: 0.68rem;
   font-weight: 800;
   color: rgba(255,255,255,0.35);
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .preview-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 2px;
-  width: 130px;
-  height: 130px;
+  width: 105px;
+  height: 105px;
   background: #12122a;
   border: 1px solid rgba(255,255,255,0.08);
   border-radius: 8px;
   padding: 4px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 /* ── PIECES LIST ── */
-.pieces-panel { max-height: 520px; overflow-y: auto; }
+.pieces-panel { max-height: 430px; overflow-y: auto; }
 
 .preview-grid .grid-cell {
   width: 100%;
