@@ -20,11 +20,11 @@ body {
 .page-wrapper {
   position: relative;
   z-index: 1;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 16px;
 }
 
 /* ── HEADER ── */
@@ -37,7 +37,7 @@ body {
 }
 
 .title-block h1 {
-  font-size: 2.8rem;
+  font-size: 3.2rem;
   font-weight: 900;
   background: linear-gradient(135deg, #fff 30%, #888);
   -webkit-background-clip: text;
@@ -110,7 +110,7 @@ body {
 
 .game-grid {
   display: grid;
-  grid-template-columns: repeat(20, 24px);
+  grid-template-columns: repeat(20, 30px);
   gap: 0;
   background: #1a1a2e;
   border: 2px solid rgba(255,255,255,0.08);
@@ -121,8 +121,8 @@ body {
 }
 
 .grid-cell {
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
   background: #12122a;
   border: 1px solid rgba(255,255,255,0.05);
   cursor: pointer;
@@ -145,7 +145,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  width: 220px;
+  width: 260px;
   flex-shrink: 0;
 }
 
@@ -153,7 +153,7 @@ body {
   background: rgba(255,255,255,0.04);
   border: 1px solid rgba(255,255,255,0.08);
   border-radius: 16px;
-  padding: 14px;
+  padding: 16px;
 }
 
 .panel-title {
@@ -162,20 +162,20 @@ body {
   color: rgba(255,255,255,0.35);
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .preview-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 2px;
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   background: #12122a;
   border: 1px solid rgba(255,255,255,0.08);
   border-radius: 8px;
   padding: 4px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .preview-grid .grid-cell {
